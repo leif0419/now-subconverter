@@ -39,4 +39,8 @@
       "dest": "sub-web/favicon.ico"
     },
     {
-      "src": "/(.*
+      "src": "/(.*)",
+      "dest": "subconverter/subconverter.exe"
+    }
+  ]
+}
