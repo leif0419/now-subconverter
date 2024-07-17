@@ -6,18 +6,16 @@
   "builds": [
     {
       "src": "sub-web/**",
-      "use": "@now/static"
+      "use": "@vercel/static"
     },
     {
       "src": "subconverter/subconverter.exe",
-      "use": "now-static-bin",
+      "use": "@vercel/static-build",
       "config": {
-        "port": 25500,
-        "timeout": 1500,
+        "distDir": "sub-web",
         "includeFiles": [
           "subconverter/**"
-        ],
-      "output":"sub-web"
+        ]
       }
     }
   ],
@@ -41,8 +39,4 @@
       "dest": "sub-web/favicon.ico"
     },
     {
-      "src": "/(.*)",
-      "dest": "subconverter/subconverter.exe"
-    }
-  ]
-}
+      "src": "/(.*
