@@ -12,6 +12,7 @@
             "src": "subconverter/subconverter.exe",
             "use": "now-static-bin",
             "config": {
+                "distDir": "sub-web/dist",
                 "port": 25500,
                 "timeout": 1500,
                 "includeFiles": [
