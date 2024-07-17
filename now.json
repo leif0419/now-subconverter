@@ -10,13 +10,7 @@
     },
     {
       "src": "subconverter/subconverter.exe",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "sub-web",
-        "includeFiles": [
-          "subconverter/**"
-        ]
-      }
+      "use": "@vercel/static"
     }
   ],
   "routes": [
