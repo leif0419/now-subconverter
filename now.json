@@ -41,11 +41,6 @@
         "src": "/(.*)",
         "dest": "subconverter/subconverter.exe"
       }
-    ],
-    "build": {
-      "env": {
-        "NODE_VERSION": "16.x"
-      }
-    }
+    ]
   }
   
